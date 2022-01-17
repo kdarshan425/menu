@@ -1,85 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html>
+<meta charset="UTF-8">
+<title>Pizza</title>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <script src="https://www.w3schools.com/lib/w3.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100&display=swap" rel="stylesheet">
 
-</head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: 'Spartan', sans-serif;}
+
+.w3-xxlarge {
+    font-size: 18px!important;
+    color: white;
+}
+
+.w3-text-grey, .w3-hover-text-grey:hover, .w3-text-gray, .w3-hover-text-gray:hover {
+    color: #bcaa73!important;
+    font-size: 14px;
+}
+
+.menu-head{
+    color:white;
+    font-size: 20px;
+}
+
+.w3-tag {
+    background-color: #06101b;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    font-size:23px !important;
+}
+
+.green{
+    color:#00ff00c7;
+    font-size:13px !important;
+}
+
+.red{
+    color:red;
+    font-size:13px !important;
+}
+</style>
 <body>
+<!-- Start Content -->
+<div id="home" >
 
-    <div>
+
+<!-- Menu -->
+<div id="menu" style="background:#06101b !important" class="w3-container  w3-xxlarge w3-padding-64">
+
+    <h1 style="font-size:30px;font-weight: bolder;" class="w3-center w3-padding-32">THE MENU</h1>    
+    <!-- <div class="w3-row w3-center w3-border w3-border-dark-grey">
+    <a href="#pizza"><div class="w3-third w3-padding-large w3-red">Pizza</div></a>
+    <a href="#pasta"><div class="w3-third w3-padding-large w3-hover-red">Pasta</div></a>
+    <a href="#starters"><div class="w3-third w3-padding-large w3-hover-red">Starters</div></a>
+</div> -->
+    <div id="pizza" style="background:#06101b;" class="w3-container w3-padding-32">
         <div class="container">
-            
-
-            <div id="menu" class="w3-container w3-black w3-xxlarge w3-padding-64">
-                <h1 class="w3-center w3-jumbo w3-padding-32">THE MENU</h1>
-                <div class="w3-row w3-center w3-border w3-border-dark-grey">
-                <a href="#pizza"><div class="w3-third w3-padding-large w3-red">Pizza</div></a>
-                <a href="#pasta"><div class="w3-third w3-padding-large w3-hover-red">Pasta</div></a>
-                <a href="#starters"><div class="w3-third w3-padding-large w3-hover-red">Starters</div></a>
-                </div>
-                
-                <div id="pizza" class="w3-container w3-white w3-padding-32">
-                <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
-                <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
-                <hr>
-                
-                <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
-                <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
-                <hr>
-                
-                <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span>
-                <span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
-                <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
-                </div>
-                
-                <h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
-                <div class="w3-container w3-white w3-padding-32">
-                
-                <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
-                <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-                <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
-                <hr>
-                
-                <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-                <p class="w3-text-grey">Ravioli filled with cheese</p>
-                <hr>
-                
-                <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-                <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
-                </div>
-                
-                <h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
-                <div class="w3-container w3-white w3-padding-32">
-                
-                <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
-                <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-                <p class="w3-text-grey">Ask the waiter</p>
-                <hr>
-                
-                <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-                <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
-                <hr>
-                
-                <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
-                <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
-                </div>
-                </div>
-
-
+            <div style="padding:20px 20px 40px 20px;margin:auto;">
+                <center>
+                    <h1 style="font-size:27px;"><b>Soup and salad</b></h1>
+                </center>
+            </div>        
         </div>
+        <h1><b class="menu-head">Tomato Bloody Mary</b> <span class="w3-right w3-tag ">199</span></h1>
+        <p class="w3-text-grey">Classic tomato soup. Tabasco, celery & Worcestershire. Vegetable and pasta. Parmesan</p>
+        <hr>
+        <h1><b class="menu-head">Sweet Corn </b> <span class="w3-right w3-tag ">199</span></h1>
+        <p class="w3-text-grey">All time favourite, hint of vinegar</p>        
+        <hr>
+        <h1><b class="menu-head">Chicken Sweet Corn </b> <span class="w3-right w3-tag ">229</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Classic tomato soup. Tabasco, celery & Worcestershire. Vegetable and pasta. Parmesan</p>
+        <hr>
+        <h1><b class="menu-head">Mushroom Cappuccino</b> <span class="w3-right w3-tag ">209</span></h1>
+        <p class="w3-text-grey">Button, shitake and oyster mushroom cream. Sour cream & porcini mushroom dust</p>
+        <hr>
+        <h1><b class="menu-head">Tom Kha </b> <span class="w3-right w3-tag ">239</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Aromatic chicken and coconut broth. Bird's eye chili and kaffir lime</p>
+        <hr>
+        <h1><b class="menu-head">Murgh Yakhani Shorba</b> <span class="w3-right w3-tag ">239</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Slow cooked chicken broth. Hand pulled chicken, brista and micro-Gs</p>
+        <hr>
+        <h1><b class="menu-head">Hot Tabasco Barley</b> <span class="w3-right w3-tag ">319</span></h1>
+        <p class="w3-text-grey">Mixed lettuce. Mixed herbs and mixed microgreens. Wasabi peas. Mixed seeds</p>
+        <hr>
+        <h1><b class="menu-head">Salad Caesar</b> <span class="w3-right w3-tag ">319</span></h1>
+        <p class="w3-text-grey">Our version. Mixed lettuce. Herbed crutons. Nuts and parmesan shavings. Sundried tomatoes</p>
+        <hr>
+        <h1><b class="menu-head">Chicken Salad Caesar</b> <span class="w3-right w3-tag ">369</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Our version. Mixed lettuce. Herbed crutons. Nuts and parmesan shavings. Sundried tomatoes</p>
+        <hr>
+        <h1><b class="menu-head">Thai Chicken Lettuce Salad</b> <span class="w3-right w3-tag ">349</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Spicy chicken strips. Chili and lime. Sesame and spring onion. Served in lettuce cups</p>
+        <hr>
     </div>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <div id="pizza" style="background:#06101b;" class="w3-container w3-padding-32">
+        <div class="container">
+            <div style="padding:20px 20px 40px 20px;margin:auto;">
+                <center>
+                    <h1 style="font-size:27px;"><b>Bar Munchies</b></h1>
+                </center>
+            </div>        
+        </div>
+        <h1><b class="menu-head">Masala Peanuts</b> <span class="w3-right w3-tag ">119</span></h1>
+        <hr>
+        <div>
+            <div class="row">
+                <div style="width:70%;align:left" class="col-xs-9"><b class="menu-head">French Fries <br>(Salted / Peri peri / Masala / Cheese)</b>  </div>
+                <div style="width:30%;align:right" class="col-xs-3"><span style="font-size:15px !important" class="w3-right w3-tag ">(119 / 139 / 139 / 159)</span></div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <div class="row">
+                <div style="width:70%;align:left" class="col-xs-9"><b class="menu-head">Kadak Roomali (Masala / Bhuna mutton kheema)</b> <br><p class="green">Veg</p><p class="red">Non-veg</p></div>
+                <div style="width:30%;align:right" class="col-xs-3"><span style="font-size:15px !important" class="w3-right w3-tag ">(119 / 249)</span></div>
+            </div>
+        </div>
+        <hr>        
+    </div>
+
+    <div id="pizza" style="background:#06101b;" class="w3-container w3-padding-32">
+        <div class="container">
+            <div style="padding:20px 20px 40px 20px;margin:auto;">
+                <center>
+                    <h1 style="font-size:27px;"><b>Small Plates</b></h1>
+                    <div style="paddint-top:20px;">
+                        <h4>From Our Tandoor, Kadhai and Tava</h4>
+                    </div>
+                </center>
+            </div>        
+        </div>
+        <h1><b class="menu-head">Tomato Bloody Mary</b> <span class="w3-right w3-tag ">199</span></h1>
+        <p class="w3-text-grey">Classic tomato soup. Tabasco, celery & Worcestershire. Vegetable and pasta. Parmesan</p>
+        <hr>
+        <h1><b class="menu-head">Sweet Corn </b> <span class="w3-right w3-tag ">199</span></h1>
+        <p class="w3-text-grey">All time favourite, hint of vinegar</p>        
+        <hr>
+        <h1><b class="menu-head">Chicken Sweet Corn </b> <span class="w3-right w3-tag ">229</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Classic tomato soup. Tabasco, celery & Worcestershire. Vegetable and pasta. Parmesan</p>
+        <hr>
+        <h1><b class="menu-head">Mushroom Cappuccino</b> <span class="w3-right w3-tag ">209</span></h1>
+        <p class="w3-text-grey">Button, shitake and oyster mushroom cream. Sour cream & porcini mushroom dust</p>
+        <hr>
+        <h1><b class="menu-head">Tom Kha </b> <span class="w3-right w3-tag ">239</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Aromatic chicken and coconut broth. Bird's eye chili and kaffir lime</p>
+        <hr>
+        <h1><b class="menu-head">Murgh Yakhani Shorba</b> <span class="w3-right w3-tag ">239</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Slow cooked chicken broth. Hand pulled chicken, brista and micro-Gs</p>
+        <hr>
+        <h1><b class="menu-head">Hot Tabasco Barley</b> <span class="w3-right w3-tag ">319</span></h1>
+        <p class="w3-text-grey">Mixed lettuce. Mixed herbs and mixed microgreens. Wasabi peas. Mixed seeds</p>
+        <hr>
+        <h1><b class="menu-head">Salad Caesar</b> <span class="w3-right w3-tag ">319</span></h1>
+        <p class="w3-text-grey">Our version. Mixed lettuce. Herbed crutons. Nuts and parmesan shavings. Sundried tomatoes</p>
+        <hr>
+        <h1><b class="menu-head">Chicken Salad Caesar</b> <span class="w3-right w3-tag ">369</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Our version. Mixed lettuce. Herbed crutons. Nuts and parmesan shavings. Sundried tomatoes</p>
+        <hr>
+        <h1><b class="menu-head">Thai Chicken Lettuce Salad</b> <span class="w3-right w3-tag ">349</span></h1>
+        <p class="red">Non-veg</p>
+        <p class="w3-text-grey">Spicy chicken strips. Chili and lime. Sesame and spring onion. Served in lettuce cups</p>
+        <hr>
+    </div>
+<!-- 
+<h1 id="pasta" class="w3-center w3-jumbo w3-padding-32">PASTA</h1>
+<div class="w3-container w3-white w3-padding-32">
+<h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
+<p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+<hr>
+<h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
+<p class="w3-text-grey">Ravioli filled with cheese</p>
+<hr>
+<h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
+<p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+</div>
+<h1 id="starters" class="w3-center w3-jumbo w3-padding-32">STARTERS</h1>
+<div class="w3-container w3-white w3-padding-32">
+<h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span>
+<span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+<p class="w3-text-grey">Ask the waiter</p>
+<hr>
+<h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
+<p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+<hr>
+<h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
+<p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+</div> -->
+</div>
+
+<!-- End Content -->
+</div>
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 </body>
 </html>
