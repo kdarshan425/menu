@@ -473,7 +473,7 @@
             <div style="padding:20px 20px 40px 20px;margin:auto;">
                 <center>                    
                     <div style="paddint-top:20px;">
-                        <h1 style="font-size:27px;"><b>Little Itale</b></h1>
+                        <h1 style="font-size:27px;"><b>Little Italy</b></h1>
                         <h4>Pizza (12 inch. Stone baked. Thin crust)</h4>
                     </div>
                 </center>
