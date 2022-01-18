@@ -142,7 +142,7 @@
         <a href="#pizza" onclick="dk_close()">Pizza</a>
         <a href="#pasta" onclick="dk_close()">Pasta</a>      
         <a href="#risotto" onclick="dk_close()">Risotto</a>
-        <a href="#Burgs" onclick="dk_close()">Burgs</a>               
+        <a href="#burg" onclick="dk_close()">Burgers</a>               
         <a href="#large" onclick="dk_close()">Large Plates</a>
         <a href="#curry" onclick="dk_close()" >Curries</a>
         <a href="#dal" onclick="dk_close()">Dal</a>
