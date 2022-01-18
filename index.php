@@ -152,7 +152,7 @@
         <a href="#noodles" onclick="dk_close()">Noodles</a>
         <a href="#ramen" onclick="dk_close()">Ramen</a>               
         <a href="#seafood" onclick="dk_close()">Seafood</a>
-        <a href="#dessart" onclick="dk_close()">Dessart</a>
+        <a href="#dessart" onclick="dk_close()">Desserts</a>
     </nav>
 <!-- Start Content -->
 <div id="home" >
